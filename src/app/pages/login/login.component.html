@@ -1,0 +1,20 @@
+<div class="main">
+    <div class="content"> 
+        <div id="text">Zaloguj się w celu uzyskania dostępu do zarządzania wyglądem strony</div>
+        <div class="heart">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <label for="login">Login: </label>
+                <div id="input">
+                    <input id="login" type="text" maxlength="50" autocomplete="off" formControlName="login">
+                </div>
+                <label for="password">Hasło: </label>
+                <div id="input">
+                    <input id="password" type="password" maxlength="50" autocomplete="off" formControlName="password">
+                </div>
+                <button type="submit" [disabled]="!loginForm.valid">Zaloguj się</button>
+            </form>
+            <button (click)="signInAsGuest()">Wejdż jako gość</button>
+        </div>
+        <div *ngIf="ifUserNotExist" id="error">Taki użytkownik nie istnieje</div>
+    </div>
+</div>
