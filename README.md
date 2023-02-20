@@ -1,4 +1,4 @@
-# Angular wedding-app-ui
+# Angular wedding-app-ui -- in progress
 ## UI for wedding app
 
 # INSTALL
