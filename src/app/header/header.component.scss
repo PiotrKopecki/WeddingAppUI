@@ -1,0 +1,90 @@
+@import 'src/app/app-styles/variables.scss';
+
+.content {
+    background-color: $secondColor;
+    color: white;
+    font-style: italic;
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    float: left;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: $background;
+    border-left: 1px solid rgb(31, 31, 31);
+    border-right: 1px solid rgb(31, 31, 31);
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+ul li:hover {
+    background-color: darkmagenta;
+}
+
+.logout {
+    position: absolute;
+    right: 2vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-icon {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mat-icon:hover {
+    color: darkmagenta;
+}
+
+@media screen and (min-width: 40em){
+    ul li {
+        width: 10vw;
+    }
+    .logout {
+        width: 5vw;
+    }
+    mat-icon {
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 40em){
+    ul li {
+        width: 20vw;
+    }
+    .logout {
+        width: 12vw;
+    }
+    mat-icon {
+        font-size: 3vh;
+    }
+}
