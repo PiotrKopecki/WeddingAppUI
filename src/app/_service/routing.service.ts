@@ -12,4 +12,8 @@ export class RoutingService {
     openHomePage() {
         this.router.navigate([''])
     }
+
+    openLoginPage() {
+        this.router.navigate(['/login'])
+    }
 }

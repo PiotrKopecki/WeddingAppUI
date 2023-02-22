@@ -21,7 +21,7 @@
     display:inline-block;
     width: 35vw; 
     aspect-ratio: 1;
-    border-image: radial-gradient(rgb(0, 0, 0) 69%,#0000 70%) 84.5% fill/100%;
+    border-image: radial-gradient($secondColor 69%,#0000 70%) 84.5% fill/100%;
     clip-path: polygon(-41% 0,50% 91%, 141% 0);
     font-weight: bold;
 }
