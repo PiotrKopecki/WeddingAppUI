@@ -11,6 +11,10 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Interceptor } from './_service/interceptor';
 import { HeaderComponent } from './header/header.component';
 import {MatIconModule} from '@angular/material/icon';
+import { HomeComponent } from './pages/home/home.component';
+import { LocalizationComponent } from './pages/localization/localization.component';
+import { AttendenceComponent } from './pages/attendence/attendence.component';
+import { MovieComponent } from './pages/movie/movie.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +22,10 @@ import {MatIconModule} from '@angular/material/icon';
     HomeLayoutComponent,
     LoginComponent,
     HeaderComponent,
+    HomeComponent,
+    LocalizationComponent,
+    AttendenceComponent,
+    MovieComponent,
   ],
   imports: [
     BrowserModule,

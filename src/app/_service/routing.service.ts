@@ -10,7 +10,7 @@ export class RoutingService {
     constructor(private router: Router) {}
 
     openHomePage() {
-        this.router.navigate([''])
+        this.router.navigate(['/home'])
     }
 
     openLoginPage() {
